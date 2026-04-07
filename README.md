@@ -1,1 +1,390 @@
-# Pr
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nidhi, Will You Be Mine Forever? ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9a9e,#fecfef);
+overflow-x:hidden;
+}
+
+/* floating hearts */
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:1;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);opacity:1}
+100%{transform:translateY(-100px);opacity:0}
+}
+
+/* navbar */
+
+.navbar{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(255,255,255,0.2);
+padding:10px 20px;
+border-radius:30px;
+backdrop-filter:blur(10px);
+z-index:10;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+/* hero */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-family:Great Vibes;
+font-size:70px;
+color:#ff1493;
+}
+
+.hero p{
+font-size:20px;
+color:white;
+margin-top:10px;
+}
+
+.cta{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#ff1493;
+color:white;
+border-radius:30px;
+text-decoration:none;
+}
+
+/* story */
+
+.section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.story{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.story h2{
+font-family:Great Vibes;
+font-size:40px;
+color:#ff1493;
+}
+
+.memories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:#ffe6f2;
+padding:20px;
+border-radius:15px;
+}
+
+/* promise */
+
+.promise{
+background:#ff1493;
+color:white;
+text-align:center;
+padding:40px;
+border-radius:20px;
+}
+
+.promise h2{
+font-family:Great Vibes;
+font-size:50px;
+}
+
+.buttons{
+margin-top:20px;
+}
+
+button{
+padding:15px 25px;
+border:none;
+border-radius:25px;
+margin:10px;
+cursor:pointer;
+}
+
+.yes{
+background:white;
+color:#ff1493;
+}
+
+.no{
+background:transparent;
+border:2px solid white;
+color:white;
+}
+
+/* gift */
+
+.gift{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,#ff1493,#ff69b4);
+display:none;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+text-align:center;
+padding:20px;
+z-index:100;
+}
+
+.gift.show{
+display:flex;
+}
+
+.gift-box{
+font-size:80px;
+animation:pop 1s ease;
+}
+
+@keyframes pop{
+0%{transform:scale(0)}
+100%{transform:scale(1)}
+}
+
+.lid{
+font-size:40px;
+position:relative;
+top:-20px;
+transition:1s;
+}
+
+.lid.open{
+top:-60px;
+transform:rotate(20deg);
+}
+
+.gift-title{
+font-family:Great Vibes;
+font-size:45px;
+margin-top:20px;
+}
+
+.quote{
+max-width:500px;
+font-size:20px;
+margin-top:20px;
+line-height:1.6;
+}
+
+.restart{
+margin-top:30px;
+padding:15px 30px;
+border:none;
+border-radius:25px;
+background:white;
+color:#ff1493;
+cursor:pointer;
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+.promise h2{
+font-size:35px;
+}
+
+.gift-title{
+font-size:30px;
+}
+
+.quote{
+font-size:16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<nav class="navbar">
+<a href="#home">Home</a>
+<a href="#story">Love</a>
+<a href="#promise">Promise</a>
+</nav>
+
+<section class="hero" id="home">
+<div>
+<h1>Nidhi ❤️</h1>
+<p>I have something special to tell you</p>
+<a href="#promise" class="cta">Scroll 💖</a>
+</div>
+</section>
+
+<section class="section story" id="story">
+
+<h2>Our Love Story</h2>
+
+<p>
+From the moment I saw you Nidhi, my world changed.
+Your smile brings happiness to my life and your presence makes everything beautiful.
+</p>
+
+<div class="memories">
+
+<div class="card">
+<h3>💖 First Meeting</h3>
+<p>The moment our eyes met.</p>
+</div>
+
+<div class="card">
+<h3>🌙 Late Talks</h3>
+<p>Talking whole night and sharing dreams.</p>
+</div>
+
+<div class="card">
+<h3>✨ Beautiful Moments</h3>
+<p>Every moment with you is magical.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section promise" id="promise">
+
+<h2>Nidhi...</h2>
+
+<p>Will you be my forever partner? ❤️</p>
+
+<div class="buttons">
+
+<button class="yes" onclick="showGift()">YES 💖</button>
+
+<button class="no" onclick="moveNo(this)">Maybe Later 😅</button>
+
+</div>
+
+</section>
+
+<div class="gift" id="gift">
+
+<div class="gift-box">
+<div class="lid" id="lid">🎁</div>
+</div>
+
+<h1 class="gift-title">For You Nidhi 💖</h1>
+
+<p class="quote">
+You are not just my love,  
+you are my peace, my happiness, and my forever home.  
+I promise to hold your hand in every moment of life. ❤️
+</p>
+
+<button class="restart" onclick="location.reload()">Experience Again ✨</button>
+
+</div>
+
+<script>
+
+/* hearts */
+
+function createHeart(){
+
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="💖";
+heart.style.left=Math.random()*100+"%";
+
+document.getElementById("hearts").appendChild(heart);
+
+setTimeout(()=>heart.remove(),6000);
+}
+
+setInterval(createHeart,300);
+
+/* no button move */
+
+function moveNo(btn){
+
+btn.style.position="relative";
+btn.style.left=Math.random()*200-100+"px";
+btn.style.top=Math.random()*100-50+"px";
+}
+
+/* show gift */
+
+function showGift(){
+
+let gift=document.getElementById("gift");
+gift.classList.add("show");
+
+let lid=document.getElementById("lid");
+
+setTimeout(()=>{
+lid.classList.add("open");
+},700);
+
+}
+
+</script>
+
+</body>
+</html>
